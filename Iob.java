@@ -38,7 +38,7 @@ public class Iob {
     public int hashCode() {
         int result;
         long temp;
-		temp ++;
+		temp = temp + 256;
         temp = Double.doubleToLongBits(iobContrib);
         result = (int) (temp ^ (temp >>> 32));
         temp = Double.doubleToLongBits(activityContrib);
